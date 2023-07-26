@@ -8,12 +8,13 @@
 </head>
 <body>
   <h1>Qual forma geométrica você gostaria de conhecer?</h1> <br>
-  <img id="img" src="interrogacao.jpg" alt=""> <br>
+  <img id="img" src="{{ url_for('static', filename='img/interrogacao.jpg') }}" alt=""> <br>
   <h2>Digite o nome de uma forma geométrica (círculo, quadrado ou triângulo):</h2> <br>
   <input type="text" id="forma"> <br>
   <button onclick="alterarImagem()">Enviar</button>
   
-  <script src="questao04.js"></script>
+  
+  <script src="{{url_for('static', filename='js/questao04.js')}}"></script>
   
 </body>
 </html>
